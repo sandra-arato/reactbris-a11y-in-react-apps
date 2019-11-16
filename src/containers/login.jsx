@@ -1,29 +1,69 @@
 import React from 'react';
-import logo from '../logo.svg';
 import styled from 'styled-components';
+import { navigate }from '@reach/router';
+import logo from '../logo.svg';
+import { Input, Button } from '../components';
 
-const Img = styled.img`
-  height: 3rem;
+const Main = styled.main`
+    display: flex;
+    min-height: 100vh;
+    background: #0e1075;
+    flex-direction: column;
+    justify-content: center;
 `
 
-export const Login = () => (
-    <main className="App">
-      <header className="App-header">
-        <Img src={logo} className="App-logo" alt="logo" />
-        <h1>
-          Login to Amazing App
-        </h1>
+const Img = styled.img`
+    display: block;
+    width: 8.5rem;
+    margin: 2rem auto 1rem auto;
+`
+
+const Form = styled.form`
+    display: flex;
+    width: 100%;
+    max-width: 25rem;
+    flex-direction: column;
+    margin: 2rem auto 0 auto;
+`
+
+const Heading = styled.h1`
+    color: #e1f0ff;
+    margin: 0 auto;
+    text-align: center;
+`
+
+export const Login = () => {
+    const handleSubmit = event => {
+        event.preventDefault();
+        const name = event.target.elements[0].value;
+        event.target.reset();
+        navigate(`/dashboard/${name}`, {state: { pwd: true }})
+    }
+    return (
+      <Main className="App">
+        <header>
+          <Img src={logo} alt="logo" />
+          <Heading>
+            Login to Amazing App
+          </Heading>
       </header>
-      <form>
-        <span>
-            Name
-        </span>
-        <input />
-        <span>
-          Your name
-        </span>
-        <input />
-        <button>Sign in</button>
-      </form>
-    </main>
-)
+      <Form onSubmit={handleSubmit}>
+          <Input
+              label="Your name"
+              placeholder="Enter your name"
+              id="name"
+              required
+          />
+          <Input
+              label="Your password"
+              type="password"
+              placeholder="Enter your password"
+              id="pwd"
+              required
+          />
+          <Button>Login</Button>
+  
+      </Form>
+      </Main>
+    )
+}

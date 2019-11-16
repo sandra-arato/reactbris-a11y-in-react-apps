@@ -5,8 +5,6 @@ import { Login } from './containers';
 const GlobalStyle = createGlobalStyle`
 body {
   margin: 0;
-  background-color: #282c34;
-  color: white;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
