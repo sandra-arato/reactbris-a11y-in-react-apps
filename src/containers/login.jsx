@@ -1,21 +1,29 @@
 import React from 'react';
 import logo from '../logo.svg';
+import styled from 'styled-components';
+
+const Img = styled.img`
+  height: 3rem;
+`
 
 export const Login = () => (
     <main className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <Img src={logo} className="App-logo" alt="logo" />
         <h1>
-          Edit <code>src/App.js</code> and save to reload.
+          Login to Amazing App
         </h1>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
+      <form>
+        <span>
+            Name
+        </span>
+        <input />
+        <span>
+          Your name
+        </span>
+        <input />
+        <button>Sign in</button>
+      </form>
     </main>
 )
