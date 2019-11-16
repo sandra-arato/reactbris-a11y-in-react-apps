@@ -1,7 +1,7 @@
 import React from 'react';
 import { createGlobalStyle } from 'styled-components';
 import { Router } from '@reach/router';
-import { Login } from './containers';
+import { Login, Dashboard } from './containers';
 const GlobalStyle = createGlobalStyle`
 body {
   margin: 0;
@@ -25,6 +25,7 @@ function App() {
       <GlobalStyle />
       <Router>
         <Login path="/" />
+        <Dashboard path="/dashboard/:name" />
       </Router>
     </>
     
