@@ -33,7 +33,7 @@ Accessibility patterns on the web are supposed to help you with complex html str
 
 Consider adding an a11y linter to your project, and possibly unit tests for critical places so that you're covered with some sweet automated tests.
 
-- [Video of Marcy Talking about Automated Testing](https://www.youtube.com/watch?v=9x-MRZEEONE)
+- [Video of Marcy Sutton Talking about Automated Testing](https://www.youtube.com/watch?v=9x-MRZEEONE)
 - Slides for the talk above: [Writing Automated Tests for A11y](https://marcysutton.github.io/a11y-and-ci)
 
 
