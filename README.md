@@ -29,7 +29,7 @@ Accessibility patterns on the web are supposed to help you with complex html str
 - [thea11yproject.com](http://thea11yproject.com) - this also has a sick 'Resources' section
 
 
-### Testing and CI/CD in Accessibility
+### Testing and CI/CD in Accessibility
 
 Consider adding an a11y linter to your project, and possibly unit tests for critical places so that you're covered with some sweet automated tests.
 
@@ -37,11 +37,11 @@ Consider adding an a11y linter to your project, and possibly unit tests for crit
 - Slides for the talk above: [Writing Automated Tests for A11y](https://marcysutton.github.io/a11y-and-ci)
 
 
-### Browser tools for accessibility
+### Browser tools for accessibility
 
 - YouTube video about Chrome features: [What's new in web accessibility (Google I/O '18)](https://www.youtube.com/watch?v=wkvslBGkhZY)
 
 
-## Licensing
+## Licensing
 
 Play with and use this repo as you like, no guarantees provided for anything.
