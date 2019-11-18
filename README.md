@@ -1,68 +1,47 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# An Amazing App
 
-## Available Scripts
+This aims to be the simplest webapp ever to showcase some accessibility tools that you can implement in _your_ React application. This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and presented at React Bris in November (2019).
 
-In the project directory, you can run:
+## Toolbox
 
-### `yarn start`
+The following packages have been added or considered:
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```
+npx create-react-app amazing-app
+yarn add react-axe --dev
+yarn add @reach/router
+yarn add @storybook/addon-a11y --dev
+// yarn add eslint-plugin-jsx-a11y --dev
+// yarn add jest-axe --dev
+```
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+You can run the app with `yarn start`, and from Step 5 you also have access to `yarn storybook`
 
-### `yarn test`
+## Further resources
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Make sure you check out some of these awesome resources
 
-### `yarn build`
+### Accessibility Patterns
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Accessibility patterns on the web are supposed to help you with complex html structures and widgets so that you don't have to start from scratch.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- [inclusive-components.design](http://inclusive-components.design)
+- [thea11yproject.com](http://thea11yproject.com) - this also has a sick 'Resources' section
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+### Testing and CI/CD in Accessibility
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Consider adding an a11y linter to your project, and possibly unit tests for critical places so that you're covered with some sweet automated tests.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [Video of Marcy Talking about Automated Testing](https://www.youtube.com/watch?v=9x-MRZEEONE)
+- Slides for the talk above: [Writing Automated Tests for A11y](https://marcysutton.github.io/a11y-and-ci)
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Browser tools for accessibility
 
-## Learn More
+- YouTube video about Chrome features: [What's new in web accessibility (Google I/O '18)](https://www.youtube.com/watch?v=wkvslBGkhZY)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Licensing
 
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Play with and use this repo as you like, no guarantees provided for anything.
